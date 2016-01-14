@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <script src='https://code.jquery.com/jquery-2.2.0.min.js'></script>
+</head>
+<body>
+    <div class="main">
+      <div class="container container1">
+          <form class="form-inline input" role="form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+              <label for="number">Number:</label>
+              <input type="text" class="form-control" id="number">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="text" class="form-control" id="email">
+            </div>
+              <button type="submit" class="btn btn-success addContact">Submit</button>
+          </form>
+      </div>
+      <div class="container container2">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th id='names'>Name</th>
+              <th id='numbers'>Number</th>
+              <th id='emails'>email</th>
+              <th></th>
+            </tr>
+          </thead>
+            <tbody>
+              <tr id="template" data-price=''>
+                <td class='names'></td>
+                <td class='numbers'></td>
+                <td class='emails'></td>
+                <td class='remove'></td>
+              </tr>
+            </tbody>
+        </table>
+     </div>
+  </div>
+      <script src='main.js'></script>
+      <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
+</body>
+</html>
